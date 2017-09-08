@@ -1,15 +1,19 @@
 {
   "iisSettings": {
-    "windowsAuthentication": false,
+    "windowsAuthentication": true,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/Ecommerce",
+      "sslPort": 0
+    },
     "iisExpress": {
-      "applicationUrl": "http://localhost:52196/",
+      "applicationUrl": "http://localhost/ecommerce",
       "sslPort": 0
     }
   },
   "profiles": {
     "IIS Express": {
-      "commandName": "IISExpress",
+      "commandName": "IIS",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
