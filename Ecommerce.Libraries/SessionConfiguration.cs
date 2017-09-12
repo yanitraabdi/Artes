@@ -14,6 +14,7 @@ using Microsoft.Owin.Security;
 using Microsoft.AspNet.Identity;
 
 using Ecommerce.Model;
+using Microsoft.AspNetCore.Http;
 
 namespace Ecommerce.Libraries
 {
@@ -21,8 +22,13 @@ namespace Ecommerce.Libraries
     {
         private const string SessionKey = "Ecommerce.Session";
         public AccountModel SessionInfo;
-        public SessionConfiguration()
+
+        private IHttpContextAccessor _contextAccessor;
+        private HttpContext _context { get { return _contextAccessor.HttpContext; } }
+
+        public SessionConfiguration(IHttpContextAccessor contextAccessor)
         {
+            _contextAccessor = contextAccessor;
             GetSessionInfo();
         }
 
@@ -70,9 +76,9 @@ namespace Ecommerce.Libraries
             return claim.Value;
         }
 
-        private static HttpContextBase Current
+        private static HttpContext Current
         {
-            get { return new HttpContextWrapper(HttpContext.Current); }
+            get { return new HttpContextWrapper(_con); }
         }
         private IAuthenticationManager AuthenticationManager
         {

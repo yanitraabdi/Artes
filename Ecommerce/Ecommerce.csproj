@@ -13,4 +13,10 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Ecommerce.Api\Ecommerce.Api.csproj" />
+    <ProjectReference Include="..\Ecommerce.Libraries\Ecommerce.Libraries.csproj" />
+    <ProjectReference Include="..\Ecommerce.Model\Ecommerce.Model.csproj" />
+  </ItemGroup>
+
 </Project>
