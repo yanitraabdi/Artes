@@ -1,17 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce", "Ecommerce\Ecommerce.csproj", "{16D7F679-50F4-42A1-A791-609C516DAB1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce", "Ecommerce\Ecommerce.csproj", "{16D7F679-50F4-42A1-A791-609C516DAB1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.Api", "Ecommerce.Api\Ecommerce.Api.csproj", "{75316BCA-8BE7-44C7-983A-EC8CFC5A2BEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Api", "Ecommerce.Api\Ecommerce.Api.csproj", "{75316BCA-8BE7-44C7-983A-EC8CFC5A2BEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.Business", "Ecommerce.Business\Ecommerce.Business.csproj", "{45943C9A-8BB4-4357-A013-D2ACE9C46FDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Business", "Ecommerce.Business\Ecommerce.Business.csproj", "{45943C9A-8BB4-4357-A013-D2ACE9C46FDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.Model", "Ecommerce.Model\Ecommerce.Model.csproj", "{2C48775C-E1E8-4E72-A74C-DDF074305ACD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Model", "Ecommerce.Model\Ecommerce.Model.csproj", "{2C48775C-E1E8-4E72-A74C-DDF074305ACD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.Libraries", "Ecommerce.Libraries\Ecommerce.Libraries.csproj", "{3561BFE9-65A6-4CBD-9C65-E14BAF6CAD67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecommerce.Libraries", "Ecommerce.Libraries\Ecommerce.Libraries.csproj", "{3561BFE9-65A6-4CBD-9C65-E14BAF6CAD67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.SPA", "Ecommerce.SPA\Ecommerce.SPA.csproj", "{1EF7A3DF-5961-4D65-BF83-3B1B5FCEFD65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{692B4105-B360-47AA-9DC5-50B148B7CA00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0EF3AD65-7148-4740-A524-990014932351}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +45,21 @@ Global
 		{3561BFE9-65A6-4CBD-9C65-E14BAF6CAD67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3561BFE9-65A6-4CBD-9C65-E14BAF6CAD67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3561BFE9-65A6-4CBD-9C65-E14BAF6CAD67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF7A3DF-5961-4D65-BF83-3B1B5FCEFD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF7A3DF-5961-4D65-BF83-3B1B5FCEFD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF7A3DF-5961-4D65-BF83-3B1B5FCEFD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF7A3DF-5961-4D65-BF83-3B1B5FCEFD65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16D7F679-50F4-42A1-A791-609C516DAB1A} = {692B4105-B360-47AA-9DC5-50B148B7CA00}
+		{75316BCA-8BE7-44C7-983A-EC8CFC5A2BEB} = {692B4105-B360-47AA-9DC5-50B148B7CA00}
+		{45943C9A-8BB4-4357-A013-D2ACE9C46FDF} = {0EF3AD65-7148-4740-A524-990014932351}
+		{2C48775C-E1E8-4E72-A74C-DDF074305ACD} = {0EF3AD65-7148-4740-A524-990014932351}
+		{3561BFE9-65A6-4CBD-9C65-E14BAF6CAD67} = {0EF3AD65-7148-4740-A524-990014932351}
+		{1EF7A3DF-5961-4D65-BF83-3B1B5FCEFD65} = {692B4105-B360-47AA-9DC5-50B148B7CA00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {22EA8105-84DB-490C-82A4-8A621754F73A}
